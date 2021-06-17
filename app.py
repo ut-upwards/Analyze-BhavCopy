@@ -10,6 +10,15 @@ st.set_page_config(
      initial_sidebar_state="expanded",
 )
 
+hide_streamlit_style = """
+<style>
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+</style>
+
+"""
+st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
+
 st.sidebar.title("Ananlyze Daily BhavCopy")
 st.sidebar.write("Analyze the daily complete bhavcopy with a simple drag n drop of that csv file")
 
